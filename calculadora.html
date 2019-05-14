@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+
+<html>
+    
+<!--<html lang="en"> para traductor
+-->
+    
+<head>
+ <link rel="icon" href="img_ico/3.jpg">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="CSS/estilo.css"> 
+  <link rel="stylesheet" type="text/css" href="CSS/menu.css">
+  <title>Contabilidad</title>
+ 
+    <header>
+             <input type="checkbox" id="btn-menu">
+                <label for="btn-menu"><img src="img_ico/menu_icon.png" height="30px" width="30px"></label>
+             
+             <nav class="menu">
+                 <ul>
+                     <li><a href="menu.html">Menú</a></li><br><br>
+                     <li><a href="configuracion.html">Configuración</a></li><br><br>
+                     <li><a href="Ayuda.html">Ayuda</a></li><br><br>
+                     <li><a href="teoria.html">Teoría</a></li><br><br>
+                 </ul>
+             </nav>
+        </header>
+</head>
+
+<body background="Ing_fon/2.jpg" style="background-repeat: no-repeat; background-size: 100%; background-attachment: fixed;">
+<br><br>
+        <div class="caja">
+            <center><audio src="Mp3/Audio3.mp3" preload="none" controls></audio></center>
+      <h1><center>Calculadora</center></h1>
+       <br> 
+        <h5>
+        <form method="post" oninput="total.value=parseFloat(Mpd.value)+parseFloat(Mod.value)">
+    
+            <h2>Costo Primo</h2>
+            
+            <p>
+            Materia prima directa: <input type="number" name="Mpd" placeholder="ingrese costo">
+            +
+            Mano de obra directa: <input type="number" name="Mod" placeholder="ingrese costo"> 
+            =
+            Total: <output name="total"></output>
+            </p>
+            <input type="reset" name="botbor" value="Borrar">    
+                
+          </form>       
+            <br><br>
+        
+          <form method="post" oninput="total.value=parseFloat(Mip.value)+parseFloat(Moi.value)+parseFloat(Ggfi.value)">
+        
+            <h2>Costo indirecto</h2> 
+            <p>
+            
+                Materia indirecta prima: <input type="number" name="Mip" placeholder="ingrese costo" >
+                +
+                Mano de obra indirecta: <input type="number" name="Moi" placeholder="ingrese costo">
+                +
+                Gastos generales de fabricación indirecta: <input type="number" name="Ggfi" placeholder="ingrese costo">
+                =
+                Total: <output name="total"></output>
+                
+              </p>
+              <input type="reset" name="botbor" value="Borrar"> 
+              
+            </form>    
+            <br><br>
+        
+            <form method="post" oninput="total.value=parseFloat(Copri.value)+parseFloat(Cgfd.value)+parseFloat(Coind.value)">
+        
+            <h2>Costo de producción</h2>
+            
+            <p>
+                Costo primo: <input type="number" name="Copri" placeholder="ingrese costo">
+                + 
+                Costo general de fabricación directo: <input type="number" name="Cgfd" placeholder="ingrese costo">
+                +
+                Costo indirecto: <input type="number" name="Coind" placeholder="ingrese costo" >
+                =
+                Total: <output name="total"></output>
+            </p>
+            <input type="reset" name="botbor" value="Borrar">    
+                
+            </form>    
+            <br><br>
+        
+            <form method="post" oninput="total.value=parseFloat(Gv.value)+parseFloat(Ga.value)">
+            
+            <h2>Costo de distribución</h2>
+            
+            <p>
+                Gastos de producción: <input type="number" name="Gv" placeholder="ingrese costo">
+                +
+                Gastos de aministración: <input type="number" name="Ga" placeholder="ingrese costo">
+                =
+                Total: <output name="total"></output>
+            </p>
+            <input type="reset" name="botbor" value="Borrar"> 
+                
+            </form>   
+            <br><br>
+        
+            <form method="post" oninput="total.value=parseFloat(Copro.value)+parseFloat(Cd.value)">
+            
+            <h2>Costo total de operación</h2>
+            
+            <p>
+                Costo de producción: <input type="number" name="Copro" placeholder="ingrese costo">
+                +
+                Costo de distribución: <input type="number" name="Cd" placeholder="ingrese costo">
+                =
+                Total: <output name="total"></output>
+            </p>
+            <input type="reset" name="botbor" value="Borrar">    
+                             
+            </form>
+            <br><br>
+        
+            <form method="post" oninput="total.value=parseFloat(Cop.value)/parseFloat(Up.value)">              
+           
+            <h2>Costo unitario de producción</h2>
+            
+            <p>
+                Costo de produción: <input type="number" name="Cop" placeholder="ingrese costo">
+                /
+                Unidades produción: <input type="number" name="Up" placeholder="ingrese costo">
+                =
+                Total: <output name="total"></output>
+            </p>
+            <input type="reset" name="botbor" value="Borrar">   
+                
+            </form>
+               
+    </h5>
+    </div>
+    <script >
+      $("#click").click(function(){
+  $("#nav").toggleClass("closed");
+});
+      //# sourceURL=pen.js
+    </script>
+
+  <script src="https://static.codepen.io/assets/editor/live/css_reload-5619dc0905a68b2e6298901de54f73cefe4e079f65a75406858d92924b4938bf.js"></script>
+</body>
+
+</html>
+ 
